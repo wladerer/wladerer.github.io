@@ -78,5 +78,13 @@ From my understanding, VASP assumes charge neutrality of the unit cell. This mig
 
 For now, I will be testing the missing electron hypothesis. 
 
+___
+#### Update:
+
+Seems like the hydrogen atoms do not remain bound. 
+
+![Two lone pairs][electrons]
+
 [exploding adam]: /assets/images/adam_explode.gif
 [less exploding adam]: /assets/images/adam_less_explode.gif
+[electrons]: /assets/images/electrons.gif
