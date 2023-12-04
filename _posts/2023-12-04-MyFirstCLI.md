@@ -6,7 +6,7 @@ tags: software, python
 ---
 
 
-There are many tasks that my research requires me to repeatedly - preparing input files, archiving results, checking on jobs, etc. Thankfully, my set of tools is quite small. I really only depend on VASP to run my simulations, so I realize that much of my work is well constrained. This led me to making the python based CLI known [vsh](https://github.com/wladerer/vsh). 
+There are many tasks that my research requires me to repeatedly - preparing input files, archiving results, checking on jobs, etc. Thankfully, my set of tools is quite small. I really only depend on VASP to run my simulations, so I realize that much of my work is well constrained. This led me to making the python based CLI known as [vsh](https://github.com/wladerer/vsh). 
 
 Much of it is a glorified wrapper to existing codebases like pymatgen and ase. But, I have found that most computational chemistry post/pre-processing tools lack usability - especially with respect to command line functionality (phonopy, you get a pass). 
 
