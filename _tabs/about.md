@@ -4,5 +4,4 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+My name is Will and I am a 3rd year chemistry PhD candidate at UCLA. My research deals with the structure and bonding in functional quantum materials.
