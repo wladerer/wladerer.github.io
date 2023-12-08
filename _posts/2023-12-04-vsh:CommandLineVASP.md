@@ -1,5 +1,5 @@
 ---
-title: My first CLI
+title: vsh - A VASP cli utility 
 date: 2023-12-03
 categories: [Software, vsh]
 tags: software, python 
