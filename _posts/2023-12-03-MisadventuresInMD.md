@@ -97,4 +97,4 @@ This means that I can run more trajectories to sample the system. Unfortunately,
 [exploding adam]: /assets/images/adam_explode.gif
 [less exploding adam]: /assets/images/adam_less_explode.gif
 [electrons]: /assets/images/electrons.gif
-[smaller]: /assets/images/smaller_timestep.gif
+[smaller]: /assets/images/small_timestep.gif
