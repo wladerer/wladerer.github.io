@@ -74,7 +74,7 @@ Currently, I am running another trajectory with an additional lone pair. The onl
 
 >  Warning: Unless you would like to perform a charged calculation, you should not set this line.
 
-From my understanding, VASP assumes charge neutrality of the unit cell. This might actually remediate the charge issue and point to some other potential problem with something like my starting geometry. 
+From my understanding, VASP assumes charge neutrality of the unit cell. This might actually remediate the charge issue and point to some other potential problem with something like my starting geometry or timestep. 
 
 For now, I will be testing the missing electron hypothesis. 
 
@@ -85,6 +85,16 @@ Seems like the hydrogen atoms do not remain bound.
 
 ![Two lone pairs][electrons]
 
+#### Update:
+
+
+I've spoke to another colleague and confirmed my suspsicion about the time step. Apparently 3fs is far too long for a system like this. You can see that the simulation runs much more smoothly now:
+
+![smaller timestep][smaller]
+
+This means that I can run more trajectories to sample the system. Unfortunately, we are still plagued with the predicament of sampling rare events. So I will either have to sample many many more times or abandon this venture.  
+
 [exploding adam]: /assets/images/adam_explode.gif
 [less exploding adam]: /assets/images/adam_less_explode.gif
 [electrons]: /assets/images/electrons.gif
+[smaller]: /assets/images/smaller_timestep.gif
