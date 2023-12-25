@@ -20,7 +20,7 @@ First, we make a directory for our slab calculation. We are going to skip the ge
 
 ```bash
 mkdir slab
-vsh input --mp-poscar 1096 -o CeS.vasp
+vsh poscar --mp-poscar 1096 -o CeS.vasp
 vsh slab CeS.vasp -m 0 0 1 --freeze 5 --vacuum 10 -o CeS_001_surface 
 
 mv CeS_001_0.vasp POSCAR
@@ -31,17 +31,9 @@ The penultimate command generates all possible $[001]$ terminations that are no 
 We can then create the requisite input files. 
 
 ```bash
-vsh input --incar band -o INCAR
-vsh input --kplane 60 -o KPOINTS
-vsh input --potcar -o POTCAR
-```
->  As I write this out, the syntax seems a bit clunky and can be reworked so there does not have to be so many calls to `vsh input`. 
-{: .prompt-info }
-
-And if you wish, you can create a quick PBS or sbatch submission script using `vsh schedule`
-
-```bash
-vsh schedule --pbs -n 2 -q standard -o vasp.pbs
+vsh incar --write band -o INCAR
+vsh kpoints --plane 60 -o KPOINTS
+vsh potcar --potcar -o POTCAR
 ```
 
 When the job finishes, you can check if the calculation has converged
@@ -55,7 +47,6 @@ And if so, you can plot a plain band structure using the following
 ```bash
 vsh band --mode plain
 ```
-
 
 ### Design Principles
 ___
